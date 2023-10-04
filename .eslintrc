@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "mocha"],
+  "rules": {
+    // Strict mode
+    "strict": ["error", "global"],
+
+    "@typescript-eslint/no-non-null-assertion": "off",
+
+    // Code style
+    "array-bracket-newline": ["error", "consistent"],
+    "array-bracket-spacing": ["off"],
+    "array-element-newline": ["error", "consistent"],
+    "arrow-parens": ["error", "always"],
+    "block-spacing": "error",
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "camelcase": ["error", {"properties": "always"}],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error", {"before": false, "after": true}],
+    "comma-style": ["error", "last"],
+    "computed-property-spacing": ["error", "never"],
+    "eol-last": ["error", "always"],
+    "eqeqeq": ["error", "smart"],
+    "func-call-spacing": ["error", "never"],
+    "function-call-argument-newline": ["error", "consistent"],
+    "function-paren-newline": ["error", "never"],
+    "implicit-arrow-linebreak": ["error", "beside"],
+    "generator-star-spacing": ["error", "before"],
+    "indent": ["error", 4],
+    "key-spacing": ["error", {
+        "align": {
+            "beforeColon": true,
+            "afterColon": true,
+            "on": "colon"
+        }
+    }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "linebreak-style": ["error", "unix"],
+    "max-len": ["error", { "code": 260, "tabWidth": 4 }],
+    "no-debugger": "off",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "no-redeclare": ["error", {"builtinGlobals": true}],
+    "no-trailing-spaces": ["error", { "skipBlankLines": false }],
+    "no-use-before-define": "off",
+    "no-var": "error",
+    "object-curly-spacing": ["error", "always"],
+    "prefer-const": "error",
+    "quotes": ["error", "double"],
+    "semi": ["error", "never"],
+    "space-before-function-paren": ["error", "always"],
+    "space-before-blocks": "error",
+    "space-in-parens": ["error", "never"],
+    "promise/always-return": "off",
+    "promise/avoid-new": "off",
+    "no-multiple-empty-lines": ["error", {"max": 2, "maxBOF": 0, "maxEOF": 1}]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ]
+}
